@@ -1,9 +1,10 @@
 {
-  "name": "operators3",
-  "version": "1.0.0",
+  "name": "babel-operator-overload-example",
+  "version": "3.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
+    "start": "npm run build && node dist/index.js",
     "build": "babel src --out-dir=dist --source-maps"
   },
   "keywords": [],
@@ -11,9 +12,9 @@
   "license": "ISC",
   "devDependencies": {
     "@babel/cli": "^7.10.1",
-    "@babel/core": "^7.10.1",
+    "@babel/core": "^7.10.2",
     "@babel/node": "^7.10.1",
-    "@babel/preset-env": "^7.10.1",
-    "babel-operator-overload-plugin": "git+https://github.com/rob-blackbourn/babel-operator-overload-plugin.git#2.0.0"
+    "@babel/preset-env": "^7.10.2",
+    "babel-operator-overload-plugin": "git+https://github.com/rob-blackbourn/babel-operator-overload-plugin.git#3.0.0"
   }
 }
